@@ -48,13 +48,8 @@ table {
 
 /* end reset */
 
-html {
-    height: 100%;
-
-}
-
 html, body {
-    max-width: 100%;
+    width: 100vw;
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -78,25 +73,24 @@ body::after {
     position: fixed;
     left: -10%;
     top: -20%;
-    z-index: -1;
+    z-index: -100;
 }
 
 header {
     font-family: 'Cambay', sans-serif;
     font-size: inherit;
     color:rgba(172, 172, 172, 1);
-    background-color: rgba(43, 42, 42, 0.4);
+    background-color: rgba(43, 42, 42, 0);
     position: fixed;
-    width: 100%;
-    min-height: 100%;
     margin: 0 auto;
+    width: 100%;
 }
 
 header a {
     color:rgba(172, 172, 172, 1);
 }
 
-header h2 {
+#name {
     font-size: 7em;
     display: flex;
     font-weight: 700;
@@ -128,16 +122,13 @@ main {
     align-items: center;
   }
 
-.portfolio img {
-    max-height: 95vh;
-}
-
 .portfolio {
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   border: none;
+  z-index: 10;
 }
 
 .portfolio section {
@@ -145,11 +136,42 @@ main {
     justify-content: center;
     align-items: center;
     max-height: 100vh;
+    width: 100vw;
+    margin-bottom: 0;
+}
+
+.portfolio img {
+    max-height: 95vh;
 }
 
 #one {
     margin-top: 1000px;
+    z-index: 90;
+    background-image: url('../images/portfolioimage1-blur.jpg');
+    background-size: cover;
+    filter: drop-shadow(10px);
 }
+
+#two {
+    z-index: 90;
+    background-image: url('../images/portfolioimage2-blur.jpg');
+    background-size: cover;
+    filter: drop-shadow(10px);
+}
+
+#three {
+    z-index: 90;
+    background-image: url('../images/portfolioimage3-blur.jpg');
+    background-size: cover;
+    filter: drop-shadow(10px);
+}
+
+#four {
+    z-index: 90;
+    background-image: url('../images/portfolioimage4-blur.jpg');
+    background-size: cover;
+}
+
 
 @keyframes grain {
     0%, 100% { transform:translate(0, 0)}
