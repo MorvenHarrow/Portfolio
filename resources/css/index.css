@@ -46,6 +46,13 @@ table {
 	border-spacing: 0;
 }
 
+/* end reset */
+
+html {
+    height: 100%;
+
+}
+
 html, body {
     max-width: 100%;
     overflow: hidden;
@@ -55,7 +62,7 @@ html, body {
 body {
     background-color:rgba(172, 172, 172, 1);
     background-image: url("../images/background2.jpg");
-    position: static;
+    position: fixed;
     background-size: 100%;
     line-height: 1;
 }
@@ -64,25 +71,25 @@ body::after {
     content: "";
     animation: grain 8s steps(10) infinite;
     background-image: url("../images/background3-grain.jpg");
-    height: 300vh;
-    width: 300vw;
+    height: 400vh;
+    width: 400vw;
     mix-blend-mode: soft-light;
-    opacity: 0.03;
+    opacity: 0.04;
     position: fixed;
-    left: 0%;
+    left: -10%;
     top: -20%;
     z-index: -1;
 }
 
 header {
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Cambay', sans-serif;
     font-size: inherit;
     color:rgba(172, 172, 172, 1);
     background-color: rgba(43, 42, 42, 0.4);
     position: fixed;
-    align-items: center;
-    width: 10%;
-    min-height: 50%;
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
 }
 
 header a {
@@ -90,13 +97,20 @@ header a {
 }
 
 header h2 {
-    font-size: 5em;
+    font-size: 7em;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 20%;
 }
 
 nav {
-    position: static;
-    margin: 0;
+    font-family: 'Cambay', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -20%;
     text-align: left;
+    font-size: 2em;
 }
 
 nav li {
@@ -116,32 +130,6 @@ main {
 
 .portfolio img {
     max-height: 95vh;
-}
-
-.imagenav {
-    display: flex;
-    top: 0;
-    justify-content: flex-start;
-    align-items: center;
-    list-style-type: none;
-    position: static;
-}
-
-.imagenav a {
-    text-decoration: none;
-    margin: 0 0.2em;
-    display: flex;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    color: #1d1e22;
-    background-color: #ffffff;
-    border-radius: 5px;
-}
-
-.imagenav p {
-    color:rgba(172, 172, 172, 1);
 }
 
 .portfolio {
