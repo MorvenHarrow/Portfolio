@@ -73,7 +73,7 @@ body::after {
     position: fixed;
     left: -10%;
     top: -20%;
-    z-index: -100;
+    z-dinex: -100;
 }
 
 header {
@@ -96,6 +96,7 @@ header a {
     font-weight: 700;
     justify-content: center;
     margin-top: 20%;
+    background-clip: text;
 }
 
 nav {
@@ -141,7 +142,25 @@ main {
 }
 
 .portfolio img {
-    max-height: 95vh;
+    height: 100vh;
+}
+
+.overlap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (orientation: portrait) {
+    .overlap {
+        background-size: cover;
+    }
 }
 
 #one {
@@ -149,14 +168,13 @@ main {
     z-index: 90;
     background-image: url('../images/portfolioimage1-blur.jpg');
     background-size: cover;
-    filter: drop-shadow(10px);
 }
 
 #two {
     z-index: 90;
     background-image: url('../images/portfolioimage2-blur.jpg');
     background-size: cover;
-    filter: drop-shadow(10px);
+    
 }
 
 #three {
@@ -169,6 +187,12 @@ main {
 #four {
     z-index: 90;
     background-image: url('../images/portfolioimage4-blur.jpg');
+    background-size: cover;
+}
+
+#five {
+    z-index: 90;
+    background-image: url('../images/portfolioimage5-blur.jpg');
     background-size: cover;
 }
 
