@@ -60,6 +60,7 @@ body {
     position: fixed;
     background-size: 100%;
     line-height: 1;
+    z-index: 0;
 }
 
 body::after {
@@ -73,7 +74,8 @@ body::after {
     position: fixed;
     left: -10%;
     top: -20%;
-    z-dinex: -100;
+    z-index: 1;
+
 }
 
 header {
@@ -99,13 +101,14 @@ header a {
     background-clip: text;
 }
 
-nav {
+header nav {
     font-family: 'Cambay', sans-serif;
     display: flex;
     justify-content: flex-start;
     margin-top: -20%;
     text-align: left;
     font-size: 2em;
+    z-index: 3;
 }
 
 nav li {
@@ -129,7 +132,7 @@ main {
   display: flex;
   flex-direction: column;
   border: none;
-  z-index: 10;
+  z-index: 2;
 }
 
 .portfolio section {
@@ -139,6 +142,7 @@ main {
     max-height: 100vh;
     width: 100vw;
     margin-bottom: 0;
+    z-index: 2;
 }
 
 .portfolio img {
@@ -155,6 +159,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    x-index: 3;
 }
 
 @media (orientation: portrait) {
@@ -165,33 +170,33 @@ main {
 
 #one {
     margin-top: 1000px;
-    z-index: 90;
+    z-index: 2;
     background-image: url('../images/portfolioimage1-blur.jpg');
     background-size: cover;
 }
 
 #two {
-    z-index: 90;
+    z-index: 2;
     background-image: url('../images/portfolioimage2-blur.jpg');
     background-size: cover;
     
 }
 
 #three {
-    z-index: 90;
+    z-index: 2;
     background-image: url('../images/portfolioimage3-blur.jpg');
     background-size: cover;
     filter: drop-shadow(10px);
 }
 
 #four {
-    z-index: 90;
+    z-index: 2;
     background-image: url('../images/portfolioimage4-blur.jpg');
     background-size: cover;
 }
 
 #five {
-    z-index: 90;
+    z-index: 2;
     background-image: url('../images/portfolioimage5-blur.jpg');
     background-size: cover;
 }
