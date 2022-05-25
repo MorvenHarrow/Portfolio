@@ -58,7 +58,8 @@ body {
     background-color:rgba(172, 172, 172, 1);
     background-image: url("../images/background2.jpg");
     position: fixed;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
     line-height: 1;
     z-index: 0;
 }
@@ -93,11 +94,11 @@ header a {
 }
 
 #name {
-    font-size: 7em;
+    font-size: 6em;
     display: flex;
     font-weight: 700;
     justify-content: center;
-    margin-top: 20%;
+    margin:10%;
     background-clip: text;
 }
 
@@ -169,36 +170,31 @@ main {
 }
 
 #one {
-    margin-top: 1000px;
+    margin-top: 50%;
     z-index: 2;
     background-image: url('../images/portfolioimage1-blur.jpg');
-    background-size: cover;
+    
 }
 
 #two {
     z-index: 2;
     background-image: url('../images/portfolioimage2-blur.jpg');
-    background-size: cover;
     
 }
 
 #three {
     z-index: 2;
     background-image: url('../images/portfolioimage3-blur.jpg');
-    background-size: cover;
-    filter: drop-shadow(10px);
 }
 
 #four {
     z-index: 2;
     background-image: url('../images/portfolioimage4-blur.jpg');
-    background-size: cover;
 }
 
 #five {
     z-index: 2;
     background-image: url('../images/portfolioimage5-blur.jpg');
-    background-size: cover;
 }
 
 
